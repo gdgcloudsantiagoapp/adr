@@ -1,0 +1,5 @@
+#ADR de Google Kubernetes Engine
+
+[2020-08-30] [Infraestructura] [Cantidad de Nodos Productivos] Se decide crear un cluster productivo con solamente 1 nodo debido a los costos asociados tanto al tipo de máquina seleccionado y el costo que cobra GCP por cada vCPU gestionada por Anthos. Además la aplicación GDG Cloud Santiago no es una aplicación crítica ni puede estar sujeta a multas legales por indisponibilidad de servicio.
+
+[2020-08-30] [Infraestructura] [Tipo de Máquina para Nodos] Se decide elegir el tipo de máquina e2-highcpu-8 debido a que las pruebas anteriores realizadas con las máquinas n1-standard1, n1-standard-2 fallaron en cumplir los mínimos recursos para poder instalar Anthos Service Mesh y n1-standard-4 dejaba un margen de vCPU de 0.04 para el uso de instancias dentro del cluster. Por lo tanto e2-highcpu-8 fue la mejor alternativa encontrada en precio calidad para tener una cantidad de vCPU y memoria RAM balanceada tanto para cumplir con los recursos solicitados por Anthos Service Mesh y las futuras cargas de trabajo que va a tener la aplicación GDG Cloud Santiago.
