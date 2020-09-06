@@ -1,4 +1,4 @@
-#ADR de Google Kubernetes Engine
+# ADR de Google Kubernetes Engine
 
 [2020-08-30] [Infraestructura] [Cantidad de Nodos Productivos] Se decide crear un cluster productivo con solamente 1 nodo debido a los costos asociados tanto al tipo de máquina seleccionado y el costo que cobra GCP por cada vCPU gestionada por Anthos. Además la aplicación GDG Cloud Santiago no es una aplicación crítica ni puede estar sujeta a multas legales por indisponibilidad de servicio.
 
