@@ -1,0 +1,3 @@
+# ADR de Anthos Service Mesh
+
+[2020-08-30] [Arquitectura] [Decisión de utilizar Anthos Service Mesh] La decisión de utilizar Anthos Service Mesh para el proyecto GDG Cloud Santigo tiene intenciones netamente educativas. Si bien en un futuro esta decisión puede etstar justificada (con el aumento de cargas de trabajo y complejidad de la aplicación), actualmente existen otras alterntivas mucho más económicas, incluso gratuitas. Anthos Service Mesh es una solución para aplicaciones mucho más grandes y complejas y también con un presupuesto mucho mayor que un proyecto personal.
